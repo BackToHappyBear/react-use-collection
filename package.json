@@ -1,0 +1,65 @@
+{
+  "name": "hooks-use",
+  "version": "0.0.0-development",
+  "description": "react hooks collection",
+  "types": "lib/cjs/index.d.ts",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "keywords": [
+    "react",
+    "hooks"
+  ],
+  "author": "xuan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BackToHappyBear/react-use-collection"
+  },
+  "scripts": {
+    "lint": "eslint {src,tests}/**/*.{ts,tsx}",
+    "lint:fix": "yarn lint --fix",
+    "build:cjs": "tsc",
+    "build:es": "tsc -m esNext --outDir esm",
+    "build": "yarn build:cjs && yarn build:es",
+    "clean": "rimraf lib esm",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "typescript": "^3.9.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "eslint": "^7.1.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.8"
+  }
+}
