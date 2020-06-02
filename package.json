@@ -1,6 +1,6 @@
 {
-  "name": "hooks-use",
-  "version": "0.0.0-development",
+  "name": "react-use-collection",
+  "version": "0.0.1",
   "description": "react hooks collection",
   "types": "lib/cjs/index.d.ts",
   "main": "lib/cjs/index.js",
