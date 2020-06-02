@@ -2,9 +2,9 @@
   "name": "react-use-collection",
   "version": "0.0.1",
   "description": "react hooks collection",
-  "types": "lib/cjs/index.d.ts",
-  "main": "lib/cjs/index.js",
-  "module": "lib/esm/index.js",
+  "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
   "sideEffects": false,
   "files": [
     "lib",
