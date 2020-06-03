@@ -32,10 +32,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     # Runs a set of commands using the runners shellz
-    - name: install, build, and test
+    - name: install, build
       run: |
         yarn install
         yarn build
-        yarn test
       env:
         CI: true
