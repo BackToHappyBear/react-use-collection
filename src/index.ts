@@ -1,2 +1,6 @@
 export { useInterval } from './useInterval'
 export { useToggle } from './useToggle'
+export { useMount } from './useMount'
+export { useUnmount } from './useUnmount'
+export { useThrottle } from './useThrottle'
+export { usePrevious } from './usePrevious'

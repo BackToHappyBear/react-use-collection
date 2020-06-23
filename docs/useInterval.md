@@ -33,6 +33,6 @@ const Demo = () => {
 
 ## Reference
 
-```js
+```ts
 useInterval(callback, delay?: number)
 ```

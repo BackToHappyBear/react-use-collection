@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
-import { useInterval } from './index'
-import ShowDocs from '../util/ShowDocs'
+import { useInterval } from '../src'
+import ShowDocs from './util/ShowDocs'
 
 const Demo = () => {
   const [count, setCount] = useState(0)
@@ -34,5 +34,5 @@ const Demo = () => {
 }
 
 storiesOf('Animation|useInterval', module)
-  .add('Docs', () => <ShowDocs md={require('./index.md')} />)
+  .add('Docs', () => <ShowDocs md={require('../docs/useInterval.md')} />)
   .add('Demo', () => <Demo />)
