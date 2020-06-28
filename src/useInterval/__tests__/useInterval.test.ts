@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { useInterval } from '../src/useInterval'
+import { useInterval } from '../index'
 
 let callback
 

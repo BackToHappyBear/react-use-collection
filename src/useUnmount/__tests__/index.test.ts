@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { useUnmount } from '../src'
+import { useUnmount } from '../..'
 
 describe('useUnmout', () => {
   it('should be defined', () => {

@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import { useUnmount } from '../src'
-import ShowDocs from './util/ShowDocs'
+import { useUnmount } from '../..'
+import ShowDocs from '../../util/ShowDocs'
 
 const Demo = () => {
   useUnmount(() => alert('unmount'))
@@ -14,5 +14,5 @@ const Demo = () => {
 }
 
 storiesOf('Lifecycle|useUnmout', module)
-  .add('Docs', () => <ShowDocs md={require('../docs/useUnmount.md')} />)
+  .add('Docs', () => <ShowDocs md={require('./index.md')} />)
   .add('Demo', () => <Demo />)

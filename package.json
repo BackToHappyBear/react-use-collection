@@ -22,13 +22,14 @@
   "scripts": {
     "start": "yarn storybook",
     "test": "jest --maxWorkers 2",
-    "lint": "eslint {src,tests}/**/*.ts",
+    "lint": "eslint src/**/*.ts",
     "lint:fix": "yarn lint --fix",
     "build:cjs": "tsc",
     "build:es": "tsc -m esNext --outDir esm",
     "build": "yarn build:cjs && yarn build:es",
     "clean": "rimraf lib esm storybook-static",
     "storybook": "start-storybook -p 6008",
+    "storybook:build": "build-storybook",
     "storybook:clean": "rimraf storybook-static",
     "release": "semantic-release"
   },
@@ -119,10 +120,10 @@
     "clearMocks": true,
     "coverageDirectory": "coverage",
     "testMatch": [
-      "<rootDir>/tests/**/*.test.(ts|tsx)"
+      "<rootDir>/src/**/*.test.(ts|tsx)"
     ],
     "setupFiles": [
-      "<rootDir>/tests/setupTests.ts"
+      "<rootDir>/src/util/setupTests.ts"
     ]
   }
 }

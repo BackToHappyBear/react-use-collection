@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
-import { useThrottle } from '../src'
-import ShowDocs from './util/ShowDocs'
+import { useThrottle } from '../..'
+import ShowDocs from '../../util/ShowDocs'
 
 const Demo = () => {
   const [value, setValue] = useState('')
@@ -22,5 +22,5 @@ const Demo = () => {
 }
 
 storiesOf('Side effects|useThrottle', module)
-  .add('Docs', () => <ShowDocs md={require('../docs/useThrottle.md')} />)
+  .add('Docs', () => <ShowDocs md={require('./index.md')} />)
   .add('Demo', () => <Demo />)

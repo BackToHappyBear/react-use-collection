@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import { useToggle } from '../src'
-import ShowDocs from './util/ShowDocs'
+import { useToggle } from '../..'
+import ShowDocs from '../../util/ShowDocs'
 
 const Demo = () => {
   const [on, toggle] = useToggle(true)
@@ -17,5 +17,5 @@ const Demo = () => {
 }
 
 storiesOf('State|useToggle', module)
-  .add('Docs', () => <ShowDocs md={require('../docs/useToggle.md')} />)
+  .add('Docs', () => <ShowDocs md={require('./index.md')} />)
   .add('Demo', () => <Demo />)

@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { useMount } from '../src'
+import { useMount } from '../..'
 
 describe('useMount', () => {
   it('should be defined', () => {

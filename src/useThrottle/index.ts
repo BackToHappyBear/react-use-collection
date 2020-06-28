@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState, useRef } from 'react'
-import { useUnmount } from './useUnmount'
+import { useUnmount } from '../useUnmount'
 
 const useThrottle = <T>(value: T, ms: number = 200) => {
   const [state, setState] = useState<T>(value)

@@ -1,5 +1,5 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { usePrevious } from '../src/usePrevious'
+import { usePrevious } from '..'
 
 const setUp = () => renderHook(({ state }) => usePrevious(state), { initialProps: { state: 0 } })
 

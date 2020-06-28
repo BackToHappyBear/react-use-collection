@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
-import { usePrevious } from '../src'
-import ShowDocs from './util/ShowDocs'
+import { usePrevious } from '../..'
+import ShowDocs from '../../util/ShowDocs'
 
 const Demo = () => {
   const [count, setCount] = useState(0)
@@ -19,5 +19,5 @@ const Demo = () => {
 }
 
 storiesOf('State|usePrevious', module)
-  .add('Docs', () => <ShowDocs md={require('../docs/usePrevious.md')} />)
+  .add('Docs', () => <ShowDocs md={require('./index.md')} />)
   .add('Demo', () => <Demo />)

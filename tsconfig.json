@@ -27,6 +27,9 @@
     "lib",
     "esm",
     "tests",
-    "stories"
+    "stories",
+    "**/__tests__",
+    "**/__stories__",
+    "**/utils"
   ]
 }
