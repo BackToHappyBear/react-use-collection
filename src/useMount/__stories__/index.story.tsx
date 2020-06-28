@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 import { useMount } from '../..'
-import ShowDocs from '../../util/ShowDocs'
+import ShowDocs from '../../utils/ShowDocs'
 
 const Demo = () => {
   useMount(() => alert('MOUNTED'))

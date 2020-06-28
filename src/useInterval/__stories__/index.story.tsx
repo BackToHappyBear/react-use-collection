@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
 import { useInterval } from '../../index'
-import ShowDocs from '../../util/ShowDocs'
+import ShowDocs from '../../utils/ShowDocs'
 
 const Demo = () => {
   const [count, setCount] = useState(0)

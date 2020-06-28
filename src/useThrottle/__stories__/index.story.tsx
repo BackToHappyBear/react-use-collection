@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
 import { useThrottle } from '../..'
-import ShowDocs from '../../util/ShowDocs'
+import ShowDocs from '../../utils/ShowDocs'
 
 const Demo = () => {
   const [value, setValue] = useState('')

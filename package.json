@@ -30,6 +30,7 @@
     "clean": "rimraf lib esm storybook-static",
     "storybook": "start-storybook -p 6008",
     "storybook:build": "build-storybook",
+    "storybook:upload": "gh-pages -d storybook-static",
     "storybook:clean": "rimraf storybook-static",
     "release": "semantic-release"
   },
@@ -77,6 +78,7 @@
     "@babel/preset-typescript": "7.10.1",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
+    "@semantic-release/npm": "7.0.5",
     "@storybook/addon-actions": "5.3.19",
     "@storybook/addon-knobs": "5.3.19",
     "@storybook/addon-notes": "5.3.19",
@@ -99,6 +101,7 @@
     "eslint-plugin-react": "7.20.0",
     "eslint-plugin-react-hooks": "4.0.4",
     "fork-ts-checker-webpack-plugin": "4.1.6",
+    "gh-pages": "2.2.0",
     "husky": "4.2.5",
     "jest": "25.5.4",
     "jest-localstorage-mock": "2.4.2",
