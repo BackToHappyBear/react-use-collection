@@ -25,14 +25,14 @@ h1, h1 code, h2, h2 code, h3, h3 code, h4, h4 code {
 
 html {
   font-size: 16px;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
 body {
   color: #444;
   font-family: 'Merriweather', Georgia, serif;
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
